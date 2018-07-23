@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FangyouModulized_Example' do
+  pod 'FangyouModulized', :path => '../'
+
+  target 'FangyouModulized_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
