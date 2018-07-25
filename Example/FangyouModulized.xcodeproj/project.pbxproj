@@ -40,8 +40,8 @@
 		1246C3856946F72CF98DA9B4 /* Pods-FangyouModulized_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangyouModulized_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangyouModulized_Example/Pods-FangyouModulized_Example.release.xcconfig"; sourceTree = "<group>"; };
 		20B5F1657019B1C9F05B87CA /* Pods-FangyouModulized_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangyouModulized_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangyouModulized_Tests/Pods-FangyouModulized_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2615FB1B773311555BE43AD8 /* Pods_FangyouModulized_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FangyouModulized_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3363E16F7114A6D2043C9C3F /* FangyouModulized.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FangyouModulized.podspec; path = ../FangyouModulized.podspec; sourceTree = "<group>"; };
-		55A56C7436EDB44E3935723D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3363E16F7114A6D2043C9C3F /* FangyouModulized.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FangyouModulized.podspec; path = ../FangyouModulized.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		55A56C7436EDB44E3935723D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5E752DEFDCF42DC8A704E90E /* Pods-FangyouModulized_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangyouModulized_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangyouModulized_Tests/Pods-FangyouModulized_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FangyouModulized_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FangyouModulized_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		72AC3E5AEB946D4E6E5D331F /* Pods-FangyouModulized_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangyouModulized_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangyouModulized_Example/Pods-FangyouModulized_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C44AED6511A35FE690CCEF89 /* Pods_FangyouModulized_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FangyouModulized_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCF7A2373BD3C9AFF68DF291 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FCF7A2373BD3C9AFF68DF291 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,11 +337,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FangyouModulized_Example/Pods-FangyouModulized_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FangyouModulized/FangyouModulized.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FangyouModulized.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

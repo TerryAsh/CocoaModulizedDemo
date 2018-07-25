@@ -29,9 +29,36 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'FangyouModulized/Classes/**/*'
+  s.default_subspec = 'Fangyou'
   
+  s.subspec 'Common' do |common|
+      common.source_files = 'FangyouModulized/Common/**/*'
+      common.dependency 'MJExtension', '3.0.13'
+      common.dependency 'AFNetworking', '3.2.0'
+      common.dependency 'ReactiveCocoa', '2.5'
+  end
+  
+  s.subspec 'Estate' do |estate|
+      estate.source_files = 'FangyouModulized/Estate/**/*'
+      estate.dependency 'FangyouModulized/Common'
+  end
+
+    s.subspec 'Client' do |client|
+    client.source_files = 'FangyouModulized/Client/**/*'
+    client.dependency 'FangyouModulized/Common'
+    end
+
+    s.subspec 'Estate' do |estate|
+    estate.source_files = 'FangyouModulized/Estate/**/*'
+    estate.dependency 'FangyouModulized/Common'
+    end
+
+    s.subspec 'Fangyou' do |fangyou|
+    fangyou.dependency 'FangyouModulized/Common'
+    fangyou.dependency 'FangyouModulized/Client'
+    fangyou.dependency 'FangyouModulized/Estate'
+    end
+
   # s.resource_bundles = {
   #   'FangyouModulized' => ['FangyouModulized/Assets/*.png']
   # }
