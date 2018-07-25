@@ -1,0 +1,6 @@
+framework module FangyouModulized {
+  umbrella header "FangyouModulized-umbrella.h"
+
+  export *
+  module * { export * }
+}

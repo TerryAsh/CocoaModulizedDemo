@@ -1,0 +1,80 @@
+{
+  "name": "FangyouModulized",
+  "version": "0.1.0",
+  "summary": "A short description of FangyouModulized.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/FY/FangyouModulized",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "FY": "terry_ash@163.com"
+  },
+  "source": {
+    "git": "https://github.com/FY/FangyouModulized.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "Fangyou",
+  "subspecs": [
+    {
+      "name": "Common",
+      "source_files": "FangyouModulized/Common/**/*",
+      "dependencies": {
+        "MJExtension": [
+          "3.0.13"
+        ],
+        "AFNetworking": [
+          "3.2.0"
+        ],
+        "ReactiveCocoa": [
+          "2.5"
+        ]
+      }
+    },
+    {
+      "name": "Estate",
+      "source_files": "FangyouModulized/Estate/**/*",
+      "dependencies": {
+        "FangyouModulized/Common": [
+
+        ]
+      }
+    },
+    {
+      "name": "Client",
+      "source_files": "FangyouModulized/Client/**/*",
+      "dependencies": {
+        "FangyouModulized/Common": [
+
+        ]
+      }
+    },
+    {
+      "name": "Estate",
+      "source_files": "FangyouModulized/Estate/**/*",
+      "dependencies": {
+        "FangyouModulized/Common": [
+
+        ]
+      }
+    },
+    {
+      "name": "Fangyou",
+      "dependencies": {
+        "FangyouModulized/Common": [
+
+        ],
+        "FangyouModulized/Client": [
+
+        ],
+        "FangyouModulized/Estate": [
+
+        ]
+      }
+    }
+  ]
+}

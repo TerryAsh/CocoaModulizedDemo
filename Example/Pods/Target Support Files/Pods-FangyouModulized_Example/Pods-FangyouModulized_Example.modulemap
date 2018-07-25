@@ -1,0 +1,6 @@
+framework module Pods_FangyouModulized_Example {
+  umbrella header "Pods-FangyouModulized_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

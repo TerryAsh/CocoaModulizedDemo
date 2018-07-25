@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - FangyouModulized (0.1.0):
+    - FangyouModulized/Fangyou (= 0.1.0)
+  - FangyouModulized/Client (0.1.0):
+    - FangyouModulized/Common
+  - FangyouModulized/Common (0.1.0):
+    - AFNetworking (= 3.2.0)
+    - MJExtension (= 3.0.13)
+    - ReactiveCocoa (= 2.5)
+  - FangyouModulized/Estate (0.1.0):
+    - FangyouModulized/Common
+  - FangyouModulized/Fangyou (0.1.0):
+    - FangyouModulized/Client
+    - FangyouModulized/Common
+    - FangyouModulized/Estate
+  - MJExtension (3.0.13)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - FangyouModulized (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - MJExtension
+    - ReactiveCocoa
+
+EXTERNAL SOURCES:
+  FangyouModulized:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  FangyouModulized: a24a4c6e0e2e3965e8ce4e39f333cad75acf92ec
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: e34b108845110b853659ad3b9d4c4764be04c849
+
+COCOAPODS: 1.5.3
