@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
       common.dependency 'AFNetworking', '3.2.0'
       common.dependency 'ReactiveCocoa', '2.5'
   end
-  
+
   s.subspec 'Estate' do |estate|
       estate.source_files = 'FangyouModulized/Estate/**/*'
       estate.dependency 'FangyouModulized/Common'

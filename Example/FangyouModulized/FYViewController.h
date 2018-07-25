@@ -7,7 +7,9 @@
 //
 
 @import UIKit;
+@import FangyouModulized;
 
 @interface FYViewController : UIViewController
 
 @end
+

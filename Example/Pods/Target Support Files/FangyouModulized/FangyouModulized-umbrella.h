@@ -10,6 +10,11 @@
 #endif
 #endif
 
+#import "FYClientListViewController.h"
+#import "FYBaseViewController.h"
+#import "FYRouter.h"
+#import "UIViewController+FYCategory.h"
+#import "FYEstateListViewController.h"
 
 FOUNDATION_EXPORT double FangyouModulizedVersionNumber;
 FOUNDATION_EXPORT const unsigned char FangyouModulizedVersionString[];
