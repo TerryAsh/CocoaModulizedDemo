@@ -8,6 +8,7 @@
 #import "FYRouter.h"
 #import "UIViewController+FYCategory.h"
 #import "MJExtension/MJExtension.H"
+#import "NSBundle+FYStyle.h"
 
 static FYRouter *instance = nil;
 
@@ -21,10 +22,9 @@ static FYRouter *instance = nil;
 
 - (NSDictionary *)routeAndVC{
     if (nil == _routeAndVC) {
-        _routeAndVC = @{
-                        @"/estate/list":@"FYEstateListViewController",
-                        @"/client/list":@"FYClientListViewController"
-                        };
+        NSString *plistPath = [[NSBundle fy_resourceBundle] pathForResource:@"Router"
+                                                                     ofType:@"plist"];
+        _routeAndVC = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
     }
     return _routeAndVC;
 }

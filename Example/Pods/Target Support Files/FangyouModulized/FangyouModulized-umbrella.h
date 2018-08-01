@@ -14,6 +14,7 @@
 #import "FYBaseViewController.h"
 #import "FYImage.h"
 #import "FYRouter.h"
+#import "NSBundle+FYStyle.h"
 #import "UIViewController+FYCategory.h"
 #import "FYEstateListViewController.h"
 

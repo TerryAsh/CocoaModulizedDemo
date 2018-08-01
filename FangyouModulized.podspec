@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   
   s.subspec 'Common' do |common|
       common.resource_bundles = {
-          'FangyouModulized' => ['FangyouModulized/Assets/*.png']
+          'FangyouModulized' => ['FangyouModulized/Assets/*']
       }
       common.source_files = 'FangyouModulized/Common/**/*'
       common.dependency 'MJExtension', '3.0.13'

@@ -24,7 +24,7 @@
       "name": "Common",
       "resource_bundles": {
         "FangyouModulized": [
-          "FangyouModulized/Assets/*.png"
+          "FangyouModulized/Assets/*"
         ]
       },
       "source_files": "FangyouModulized/Common/**/*",
