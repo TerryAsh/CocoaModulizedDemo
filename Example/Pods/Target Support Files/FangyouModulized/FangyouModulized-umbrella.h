@@ -12,6 +12,7 @@
 
 #import "FYClientListViewController.h"
 #import "FYBaseViewController.h"
+#import "FYImage.h"
 #import "FYRouter.h"
 #import "UIViewController+FYCategory.h"
 #import "FYEstateListViewController.h"

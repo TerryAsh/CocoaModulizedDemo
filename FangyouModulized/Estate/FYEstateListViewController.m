@@ -17,6 +17,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"房源列表";
+    
+    UIImage *image = [FYImage imageNamed:@"submit_red"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    [imageView sizeToFit];
+    imageView.center = self.view.center;
+    [self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning {

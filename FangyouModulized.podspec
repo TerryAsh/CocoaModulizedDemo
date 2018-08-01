@@ -32,6 +32,9 @@ TODO: Add long description of the pod here.
   s.default_subspec = 'Fangyou'
   
   s.subspec 'Common' do |common|
+      common.resource_bundles = {
+          'FangyouModulized' => ['FangyouModulized/Assets/*.png']
+      }
       common.source_files = 'FangyouModulized/Common/**/*'
       common.dependency 'MJExtension', '3.0.13'
       common.dependency 'AFNetworking', '3.2.0'
@@ -43,25 +46,16 @@ TODO: Add long description of the pod here.
       estate.dependency 'FangyouModulized/Common'
   end
 
-    s.subspec 'Client' do |client|
+  s.subspec 'Client' do |client|
     client.source_files = 'FangyouModulized/Client/**/*'
     client.dependency 'FangyouModulized/Common'
-    end
+  end
 
-    s.subspec 'Estate' do |estate|
-    estate.source_files = 'FangyouModulized/Estate/**/*'
-    estate.dependency 'FangyouModulized/Common'
-    end
-
-    s.subspec 'Fangyou' do |fangyou|
+  s.subspec 'Fangyou' do |fangyou|
     fangyou.dependency 'FangyouModulized/Common'
     fangyou.dependency 'FangyouModulized/Client'
     fangyou.dependency 'FangyouModulized/Estate'
-    end
-
-  # s.resource_bundles = {
-  #   'FangyouModulized' => ['FangyouModulized/Assets/*.png']
-  # }
+  end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

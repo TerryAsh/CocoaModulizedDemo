@@ -22,6 +22,11 @@
   "subspecs": [
     {
       "name": "Common",
+      "resource_bundles": {
+        "FangyouModulized": [
+          "FangyouModulized/Assets/*.png"
+        ]
+      },
       "source_files": "FangyouModulized/Common/**/*",
       "dependencies": {
         "MJExtension": [
@@ -47,15 +52,6 @@
     {
       "name": "Client",
       "source_files": "FangyouModulized/Client/**/*",
-      "dependencies": {
-        "FangyouModulized/Common": [
-
-        ]
-      }
-    },
-    {
-      "name": "Estate",
-      "source_files": "FangyouModulized/Estate/**/*",
       "dependencies": {
         "FangyouModulized/Common": [
 
